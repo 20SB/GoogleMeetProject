@@ -1,0 +1,1202 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* overflow: hidden; */
+  background-color: rgb(32, 33, 36);
+  overflow-y: hidden;
+}
+main {
+  display: inline-block;
+  width: 75%;
+  background-color: rgb(32, 33, 36);
+  height: 90vh;
+  transition: width 0.5s ease;
+}
+/* aside {
+  display: inline-block;
+  width: 25%;
+  background-color: rgb(32, 33, 36);
+  margin-left: -5px;
+  vertical-align: top;
+} */
+footer {
+  display: flex;
+
+  /* justify-content: space-between; */
+  background-color: rgb(32, 33, 36);
+  height: 65px;
+  width: 100%;
+  color: #fff;
+  direction: ltr;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 0.75rem;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+#mySpace {
+  overflow: hidden;
+  background-color: rgb(32, 33, 36);
+  position: static;
+  position: relative;
+}
+/* Container Styling */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  padding: 8px 20px;
+}
+
+/* Each profile Styling */
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-width: 33%;
+  width: 30%;
+  /* height: 180px; */
+  background-color: rgb(60, 64, 67);
+  margin: 5px;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: height 0.5s ease;
+}
+.mic-section {
+  display: flex;
+  font-size: 13px;
+  justify-content: flex-end;
+}
+.mic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(32, 33, 36, 0.3);
+  border-radius: 50%;
+  color: #fff;
+  /* padding: 5px; */
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+.profile_image {
+  /* height:90px;
+    width: 90px;
+    border-radius: 50%; */
+  display: flex;
+  /* margin:auto; */
+  /* margin-top: 5%; */
+  justify-content: center;
+}
+.profile_image img {
+  /* width: 100%;
+    height: auto; */
+  object-fit: cover;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.name p {
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.0178571429em;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  /* margin-top: -25px; */
+  user-select: none;
+}
+/* caption space */
+#caption-space {
+  display: none;
+}
+/* footer */
+footer div {
+  display: flex;
+  height: 55px;
+  align-items: center;
+}
+/* Meeting Information */
+.info {
+  width: 25%;
+  padding-left: 20px;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  line-height: 1.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.007em;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+/* Meeting Controls */
+.controls {
+  width: 50%;
+  justify-content: center;
+  padding: 10px;
+}
+.clickable-element {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(60, 64, 67);
+  border-radius: 50%;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  position: relative;
+}
+/* red and blue backgrounds for buttons on click */
+.bgr {
+  background-color: red;
+}
+.bgb {
+  background-color: rgb(104, 163, 241);
+  color: black;
+}
+/* Two images to toggle when each button is clicked */
+.image1 {
+  display: block;
+}
+.image2 {
+  display: none;
+}
+.popped-text1,
+.popped-text2 {
+  display: none;
+}
+.hover-div .popped-text {
+  display: none;
+}
+
+.hover-div:hover .popped-text {
+  display: inline-block;
+  position: absolute;
+  bottom: 110%;
+  color: rgb(205, 205, 205);
+  background-color: rgb(60, 64, 67);
+  padding: 5px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  user-select: none;
+  z-index: 1;
+  animation: slide-up 0.5s, opaq01 0.5s ;
+  
+}
+/* Emoji Section */
+#emoji-space {
+  position: absolute;
+  top: 84%;
+  left: 37%;
+  animation: slide-up 0.5s, opaq01 0.5s ;
+}
+.emoji-container {
+  /* display: flex; but its on click */
+  width: 23rem;
+  height: 2.5rem;
+  margin: auto;
+  background-color: rgb(44, 44, 44);
+  /* bottom: 125%; */
+  /* left: -389%; */
+  border-radius: 20px;
+  top: 1%;
+  display: none;
+}
+.emoji {
+  border-radius: 50%;
+  height: 2.3rem;
+  width: 2.3rem;
+  margin: 0px 2px;
+  text-align: center;
+  cursor: pointer;
+}
+.emoji:hover {
+  background-color: rgb(83, 83, 83);
+}
+.emoji p {
+  font-size: 1.3rem;
+  margin: auto;
+  margin-top: 4px;
+}
+.emoji-container {
+  /* display: none; */
+  visibility: visible;
+}
+.animate-height {
+  transition: height 0.3s ease-in-out;
+}
+
+.animate-opacity {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.mo {
+  position: relative;
+}
+.more-optn-popup {
+  display: none;
+}
+.more-optn-popup.view {
+  position: absolute;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  color: #1a1a1a;
+  height: auto;
+  min-width: 35vh;
+  width: auto;
+  bottom: 40px;
+  left: 0px;
+  border-radius: 4px;
+  padding: 10px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  box-sizing: border-box;
+  box-shadow: 5px 0px 4px 0px lightgray;
+  animation: slide-up5 0.5s, opaq01 0.5s ;
+
+}
+.optn {
+  margin: 0;
+  height: 35px;
+  width: 100%;
+  padding: 0 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.optn:hover {
+  background-color: rgb(241, 243, 244);
+}
+
+/* Extra Controls */
+
+.clickable-element-2 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(60,64,67); */ /* it has no background color*/
+  border-radius: 50%;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  font-size: 1.2rem; /*its font size it littel bigger than other control button */
+  position: relative;
+}
+.clickable-element-2:hover {
+  background-color: rgb(44, 44, 44);
+  box-shadow: 0px 0px 0px 5px rgb(44, 44, 44);
+}
+.extra {
+  display: flex;
+  width: 25%;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.popped-text {
+  display: none;
+  
+  
+}
+.hover-div2:hover .popped-text {
+  display: inline-block;
+  position: absolute;
+  bottom: 110%;
+  color: rgb(205, 205, 205);
+  background-color: rgb(60, 64, 67);
+  padding: 5px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  user-select: none;
+  z-index: 1;
+  right: 1%;
+  animation: slide-up 0.5s, opaq01 0.5s ;
+  
+}
+.hover-div2-hostControl:hover .popped-text {
+  /* this is written separately bcoz there is some change in position becoz half of it moving out of boundary */
+  display: inline-block;
+  position: absolute;
+  bottom: 110%;
+  right: 1%;
+  color: rgb(205, 205, 205);
+  background-color: rgb(60, 64, 67);
+  padding: 5px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  user-select: none;
+  z-index: 1;
+  
+  animation: slide-up 0.5s, opaq01 0.5s ;
+  
+}
+
+/* aside Section */
+.attached-div {
+  display: none;
+  /* transition: translateX(100%) 0.5s; */
+  
+  /* min-width: 50vh; */
+ 
+  /* Add styles for the attached div */
+}
+.close-div {
+  display: none;
+  /* Add styles for the attached div */
+}
+
+.attached-div.visible {
+  position: fixed;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  color: #1a1a1a;
+  height: 88vh;
+  width: 300px;
+  top: 0;
+  right: 0;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  margin: 12px 10px 0px 0px;
+  user-select: none;
+  cursor: default;
+  overflow: hidden;
+  animation: slide-in 0.5s ;
+  /* transition: translateX(0) 0.5s; */
+}
+
+.close-div.visible {
+  position: fixed;
+  display: block;
+  /* background-color: rgb(255, 0, 0); */
+  color: gray;
+  height: 43px;
+  width: 43px;
+  top: 12px;
+  right: 12px;
+  text-overflow: ellipsis;
+  border-radius: 50%;
+  margin: 16px 10px 0px 0px;
+  cursor: pointer;
+}
+.close-div.visible:hover {
+  background-color: rgb(241, 243, 244);
+}
+.cross {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 12px auto;
+}
+
+.heading {
+  font-size: 1.1rem;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+.content {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  padding-left: 25px;
+  letter-spacing: 0.8px;
+  font-weight: 524;
+  display: block;
+  text-align: left;
+}
+.content-heading {
+  font-weight: 550;
+  color: rgb(92 92 92);
+  margin-left: 16px;
+}
+
+/* show everyone */
+.connected-members {
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: -11px;
+  right: -3px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  color: white;
+  background: rgb(95, 99, 104);
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+#people-content {
+  margin-top: -7px;
+  padding-left: 20px;
+}
+#add-people {
+  margin: 20px 23px;
+  display: flex;
+  text-decoration: none;
+  color: rgb(92 92 92);
+  width: 50%;
+  padding: 10px;
+  width: 34%;
+  padding: 5px;
+  border-radius: 4px;
+}
+#add-people:hover {
+  background-color: rgb(241, 243, 244);
+}
+
+/* add people popup window */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+.popup:target {
+  display: block;
+}
+
+.popup-content {
+  background-color: white;
+  height: 404px;
+  max-width: 90%;
+  width: 450px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  display: blcok;
+  top: 10px;
+  right: 10px;
+  /* background-color: #ccc; */
+  text-decoration: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: gray;
+}
+.close-btn:hover {
+  background-color: rgb(241, 243, 244);
+}
+
+.stay .d1 {
+  text-align: left;
+  color: rgb(92 92 92);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.stay .d2 {
+  margin-top: 35px;
+  height: 30px;
+  position: relative;
+}
+#invite {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding-top: 12px;
+  justify-content: center;
+  background-color: white;
+  border: 0px;
+  cursor: pointer;
+  color: #1a73e8;
+}
+
+#invite:hover {
+  background-color: rgba(188, 255, 255, 0.317);
+  color: darkblue;
+}
+#invite:hover ~ #small-line {
+  background-color: darkblue;
+  border-color: darkblue;
+}
+.button {
+  position: relative;
+}
+.button:after {
+  content: "";
+  background: #1a73e8;
+  display: block;
+  position: absolute;
+  padding-top: 10%;
+  padding-left: 100%;
+  margin-top: -3%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+#small-line {
+  position: fixed;
+  height: 1px;
+  width: 65px;
+  background-color: blue;
+  border: 1px solid blue;
+  margin-top: -2px;
+  right: 47.6%;
+  border-radius: 3px 3px 0 0;
+}
+
+.popup-content hr {
+  margin: 10px -20px;
+  border-color: #00000038;
+}
+.popup-content input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 98%;
+}
+.scrolling-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 273px;
+  margin: 0 -20px;
+  padding-top: 10px;
+}
+.scrolling-content::-webkit-scrollbar {
+  background: transparent;
+  height: 8px;
+  width: 8px;
+}
+.scrolling-content::-webkit-scrollbar-thumb {
+  border: none;
+  box-shadow: none;
+  background: #dadce0;
+  border-radius: 4px;
+  min-height: 40px;
+}
+.scrolling-content::-webkit-scrollbar-track {
+  margin: 3px 0;
+}
+
+.scrolling-content::-webkit-scrollbar-thumb:hover {
+  background: rgb(189, 193, 198);
+}
+#suggestion {
+  text-align: left;
+  font-size: 0.8rem;
+  color: rgb(136 135 135);
+  font-family: arial;
+  padding: 0 20px;
+}
+.contact {
+  margin: 10px 0px;
+}
+.friend {
+  padding: 10px 20px;
+  position: relative;
+  /* background-color: aqua; */
+}
+.friend:hover {
+  background-color: rgba(213, 213, 213, 0.416);
+}
+.friend .name {
+  display: inline-block;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+}
+.friend .name p {
+  color: rgb(75, 75, 75);
+  text-shadow: none;
+  letter-spacing: normal;
+}
+.friend .email {
+  display: inline-block;
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  font-size: 0.8rem;
+  font-family: arial;
+  color: rgb(122 122 122);
+}
+
+.friend .small_image-dp {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  margin: 0;
+}
+.friend #myCheckbox {
+  display: inline-block;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  transform: scale(1.5); /* Increase the size of the checkbox */
+}
+
+/* In call People */
+.callers {
+  position: relative;
+  background-color: darkcyan;
+  height: auto;
+  margin: -6% 0 0 -4%;
+}
+.callers .container {
+  display: block;
+  width: 100%;
+  /* background-color: aqua; */
+  height: 395px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 1%;
+  padding: 0px;
+  margin-top: 11px;
+}
+.callers .container::-webkit-scrollbar {
+  background: transparent;
+  height: 8px;
+  width: 8px;
+}
+.callers .container::-webkit-scrollbar-thumb {
+  border: none;
+  box-shadow: none;
+  background: #dadce0;
+  border-radius: 4px;
+  min-height: 40px;
+}
+.callers .container::-webkit-scrollbar-track {
+  margin: 3px 0;
+}
+
+.callers .container::-webkit-scrollbar-thumb:hover {
+  background: rgb(189, 193, 198);
+}
+.callers .profile {
+  background-color: inherit;
+  min-height: 56px;
+  width: 100%;
+  display: flex;
+  max-width: 97%;
+  flex-direction: row;
+  text-align: left;
+  position: relative;
+}
+.small_image-dp {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  margin: 0;
+}
+.small_image-dp img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.callers .name {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  /* margin-top: 9%; */
+  left: 20%;
+  line-height: 0.7rem;
+  font-size: 0.8rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.callers .name p {
+  color: black;
+  text-shadow: none;
+  letter-spacing: normal;
+}
+.callers .mic-section {
+  position: absolute;
+  right: 18%;
+}
+.callers .mic {
+  color: rgb(92 92 92);
+  background-color: inherit;
+  font-size: 1rem;
+}
+.callers .more-actions {
+  position: absolute;
+  right: 1%;
+  font-size: 1.2rem;
+  color: rgb(92 92 92);
+  /* color: gray; */
+  height: 43px;
+  width: 43px;
+  cursor: pointer;
+  /* background-color: red; */
+  border-radius: 50%;
+  padding-left: 19px;
+  box-sizing: border-box;
+}
+.callers .more-actions:hover {
+  background-color: rgba(213, 213, 213, 0.406);
+}
+.ma {
+  position: relative;
+}
+.mop {
+  display: none;
+}
+.mop.view {
+  position: absolute;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  color: #1a1a1a;
+  height: auto;
+  min-width: 35vh;
+  width: auto;
+  right: 7px;
+  top: 44px;
+  border-radius: 4px;
+  padding: 10px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px 5px lightgray;
+  font-size: 0.9rem;
+}
+#search-people {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 8px 20px 15px 16px;
+  height: 45px;
+}
+#search-people:focus-within {
+  border: 2px solid blue;
+}
+#search-icon {
+  margin-left: 15px;
+  font-size: 1rem;
+  color: rgb(92 92 92);
+  /* /* background-color: white;
+    border: 0px; */
+}
+#search-box {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  padding: 5px;
+  width: 80%;
+}
+/* In-call-messages */
+/* toggle switch */
+.toggle-control {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.toggle-control input:checked ~ .control {
+  background-color: rgb(141, 141, 141);
+}
+.toggle-control input:checked ~ .control:after {
+  left: 21px;
+  background-color: rgb(255, 255, 255);
+  background-image: url("./assets/true.png");
+  background-size: 12px 12px;
+  border: 1px solid #888888;
+}
+.toggle-control .control:after {
+  content: "";
+  position: absolute;
+  top: -2.5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  transition: left 0.15s ease-in;
+  background-image: url("./assets/cross.png");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #888888;
+}
+.toggle-control .control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 41px;
+  border-radius: 25px;
+  background-color: rgb(141, 141, 141);
+  transition: background-color 0.15s ease-in;
+}
+/* msg-allow container  */
+.msg {
+  padding: 0 15px 0 15px;
+  height: auto;
+}
+.msgalow {
+  height: 40px;
+  background-color: rgb(241, 243, 244);
+  padding-left: 10px;
+  justify-content: space-between;
+  border-radius: 4px;
+  white-space: normal;
+}
+#alrt {
+  margin-top: 25px;
+  overflow-wrap: break-word;
+  display: flex;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 6px 0 6px 9px;
+}
+#alrt p {
+  line-height: 1.3;
+}
+#chats {
+  /* background-color: pink; */
+  height: 295px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  overflow-y: scroll;
+}
+#chats::-webkit-scrollbar {
+  background: transparent;
+  height: 8px;
+  width: 8px;
+}
+#chats::-webkit-scrollbar-thumb {
+  border: none;
+  box-shadow: none;
+  background: #dadce0;
+  border-radius: 4px;
+  min-height: 40px;
+}
+#chats::-webkit-scrollbar-track {
+  margin: 3px 0;
+}
+
+#chats::-webkit-scrollbar-thumb:hover {
+  background: rgb(189, 193, 198);
+}
+
+#chats::-webkit-scrollbar {
+  background: transparent;
+  height: 8px;
+  width: 8px;
+}
+
+#chats::-webkit-scrollbar-thumb {
+  border: none;
+  box-shadow: none;
+  background: #dadce0;
+  border-radius: 4px;
+  min-height: 40px;
+}
+
+#chats::-webkit-scrollbar-track {
+  margin: 3px 0;
+}
+
+#chats:hover::-webkit-scrollbar-thumb {
+  background: rgb(189, 193, 198);
+}
+
+#chats::-webkit-scrollbar-thumb:hover {
+  background: rgb(189, 193, 198);
+}
+
+.message {
+  /* background-color: aqua; */
+  height: auto;
+  width: 100%;
+  margin: 15px -10px 15px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.msg-dtl {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  margin: -15px 0 -10px 0;
+  padding: 0;
+  height: auto;
+}
+.ms {
+  flex-grow: 1;
+  height: auto;
+  text-align: left;
+  line-height: 2;
+}
+.nm {/* messanger */
+  font-size: 1rem;
+  font-weight: bold;
+}
+.tm,
+.ms {/* message */
+  font-size: 0.8rem;
+  color: rgb(68, 68, 68);
+}
+.tm {/* MSG time */
+  margin-left: 10px;
+}
+.sminp{
+  /* background-color: red; */
+  padding: 4px 0;
+    bottom: 8px;
+    position: relative;
+}
+.send-msg{
+  background-color: rgb(224, 224, 224);
+    display: flex;
+    height: 45px;
+    border-radius: 25px;
+    margin: 0 10px;
+    padding: 10px 0 10px 10px;
+    box-sizing: border-box;
+    position: relative;
+    /* bottom: 10px; */
+    width: 100%;
+    justify-content: space-between;
+}
+.send-msg input{
+  border: none;
+    outline: none;
+    background: transparent;
+    flex-grow: 1;
+    padding-right: 10px;
+    box-sizing: border-box;
+
+}
+.sndicn{
+  color: gray; user-select: none;
+  height: 45px;
+  width: 45px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.inpSltd {
+  color: rgb(26,115,232);
+  cursor: pointer;
+  border-radius: 50%;
+  
+}
+.inpSltd:hover .popped-text {
+  /* this is written separately bcoz there is some change in position becoz half of it moving out of boundary */
+  display: flex;
+  position: absolute;
+  bottom: 110%;
+  height:10px;
+  right: 1%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(60, 64, 67);
+  padding: 5px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  user-select: none;
+  z-index: 1;
+  animation: slide-up 0.5s, opaq01 0.5s ;
+  
+}
+.inpSltd:hover{
+  background-color: rgb(196, 196, 196);
+}
+
+/* host management */
+.ntext {
+  width: 85%;
+  white-space: normal;
+  text-align: justify;
+  color: #535353;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.host-mngmt {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  /* background-color: aqua; */
+  padding: 10px 0;
+  overflow-y: scroll;
+}
+#host-mngmtCB {
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #b4b4b4;
+  border-top: 1px solid #b4b4b4;
+  padding: 20px 7px;
+  margin-top: 0;
+  height: auto;
+}
+.host-mngmt::-webkit-scrollbar {
+  background: transparent;
+  height: 8px;
+  width: 8px;
+}
+.host-mngmt::-webkit-scrollbar-thumb {
+  border: none;
+  box-shadow: none;
+  background: #dadce0;
+  border-radius: 4px;
+  min-height: 40px;
+}
+.host-mngmt::-webkit-scrollbar-track {
+  margin: 3px 0;
+}
+
+.host-mngmt::-webkit-scrollbar-thumb:hover {
+  background: rgb(189, 193, 198);
+}
+.hmt {
+  width: 100%;
+  box-sizing: border-box;
+  /* background-color: aquamarine; */
+  position: relative;
+}
+.hmt .toggle-control .control {
+  position: absolute;
+  top: 5px;
+  left: 75%;
+}
+.mpoptns {
+  /* background-color: #1a73e8; */
+  width: 100%;
+  padding-left: 45px;
+  height: 100px;
+  /* margin-top: 20px; */
+  /* margin-left: 20px; */
+  box-sizing: border-box;
+}
+.host-option{
+  display: flex;
+    flex-direction: column;
+}
+
+.htmex{
+  padding-left: 0;
+  width: 100%;
+  margin: 5px 0;
+  height: auto;
+}
+.htmex .content-heading{
+  margin-left: 0;
+  color: black;
+}
+
+/* Extra Classes */
+.none_select {
+  user-select: none;
+}
+.text_select {
+  user-select: text;
+}
+
+.material-symbols-outlined {
+  margin-right: 10px;
+}
+
+/* animation keyframes */
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-up5 {
+  0% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes opaq01 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+    color: white;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+    color: white;
+  }
+}

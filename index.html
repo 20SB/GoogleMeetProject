@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/905c31243a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Google Meet</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-512dp/logo_meet_2020q4_color_1x_web_512dp.png"
+    />
+  </head>
+  <body>
+    <div id="mySpace">
+      <main id="profile-conatiner">
+        <div class="container">
+          <div class="profile">
+            <div class="mic-section">
+              <div class="mic">
+                <i class="fa-solid fa-microphone-slash"></i>
+              </div>
+            </div>
+            <div class="profile_image">
+              <img
+                src="./assets/thalapathy.jpg"
+                alt="vijay thalapathy"
+                style="text-align: center"
+              />
+            </div>
+            <div class="name"><p>Vijay Thalapathy</p></div>
+          </div>
+
+          <div class="profile">
+            <div class="mic-section">
+              <div class="mic">
+                <i class="fa-solid fa-microphone-slash"></i>
+              </div>
+            </div>
+            <div class="profile_image">
+              <img
+                src="./assets/allu.avif"
+                alt="Allu Arjun"
+                style="text-align: center"
+              />
+            </div>
+            <div class="name"><p>Allu Arjun</p></div>
+          </div>
+
+          <div class="profile">
+            <div class="mic-section">
+              <div class="mic">
+                <i class="fa-solid fa-microphone-slash"></i>
+              </div>
+            </div>
+            <div class="profile_image">
+              <img
+                src="./assets/yash.jpg"
+                alt="Yash"
+                style="text-align: center"
+              />
+            </div>
+            <div class="name"><p>Yash</p></div>
+          </div>
+
+          <div class="profile">
+            <div class="mic-section">
+              <div class="mic">
+                <i class="fa-solid fa-microphone-slash"></i>
+              </div>
+            </div>
+            <div class="profile_image">
+              <img
+                src="./assets/ntr.avif"
+                alt="Jr. NTR"
+                style="text-align: center"
+              />
+            </div>
+            <div class="name"><p>N. T. Rama Rao Jr.</p></div>
+          </div>
+
+          <div class="profile">
+            <div class="mic-section">
+              <div class="mic">
+                <i class="fa-solid fa-microphone-slash"></i>
+              </div>
+            </div>
+            <div class="profile_image">
+              <img
+                src="./assets/deverkonda.jpeg"
+                alt="Vijay"
+                style="text-align: center"
+              />
+            </div>
+            <div class="name"><p>Vijay Devarakonda</p></div>
+          </div>
+
+          <div class="profile">
+            <div class="mic-section">
+              <div class="mic">
+                <i class="fa-solid fa-microphone-slash"></i>
+              </div>
+            </div>
+            <div class="profile_image">
+              <img
+                src="./assets/mahes.jpg"
+                alt="Mahesh"
+                style="text-align: center"
+              />
+            </div>
+            <div class="name"><p>Mahesh Babu</p></div>
+          </div>
+
+          <div class="profile">
+            <div class="mic-section">
+              <div class="mic">
+                <i class="fa-solid fa-microphone-slash"></i>
+              </div>
+            </div>
+            <div class="profile_image">
+              <img
+                src="./assets/prabhas.jpg"
+                alt="Prabhas"
+                style="text-align: center"
+              />
+            </div>
+            <div class="name"><p>Prabhas</p></div>
+          </div>
+
+          <div class="profile">
+            <div class="mic-section">
+              <div class="mic">
+                <i class="fa-solid fa-microphone-slash"></i>
+              </div>
+            </div>
+            <div class="profile_image">
+              <img
+                src="./assets/Subha.jpg"
+                alt="Subha"
+                style="text-align: center"
+              />
+            </div>
+            <div class="name"><p>You</p></div>
+          </div>
+        </div>
+        <div id="caption-space"></div>
+        <!-- <div id="emoji-space"> -->
+        <div id="emoji-space" class="emoji-container">
+          <div class="emoji"><p>💖</p></div>
+          <div class="emoji"><p>👍</p></div>
+          <div class="emoji"><p>🎉</p></div>
+          <div class="emoji"><p>👏</p></div>
+          <div class="emoji"><p>😂</p></div>
+          <div class="emoji"><p>😮</p></div>
+          <div class="emoji"><p>😢</p></div>
+          <div class="emoji"><p>🤔</p></div>
+          <div class="emoji"><p>👎</p></div>
+        </div>
+        <!-- </div> -->
+      </main>
+      <!-- <aside>message section</aside> -->
+
+      <!-- Footer Section -->
+      <footer>
+        <!-- Meeting Information -->
+        <div class="info">
+          <span class="none_select"
+            ><div id="clock" style="display: inline"></div
+          ></span>
+          <span class="none_select">&nbsp&nbsp|&nbsp&nbsp</span>
+          <span class="text_select">bew-mtsm-fqh</span>
+        </div>
+
+        <!-- Meeting Controls -->
+        <div class="controls">
+          <!-- Mic ON OFF -->
+          <div class="clickable-element toggleElement br hover-div">
+            <i class="fa-solid fa-microphone-slash image1"></i>
+            <i class="fa-solid fa-microphone image2"></i>
+            <span class="popped-text1">Turn off microphone (CTRL + D)</span>
+            <span class="popped-text2">Turn on microphone (CTRL + D)</span>
+          </div>
+          <!-- Camera ON OFF -->
+          <div class="clickable-element toggleElement hover-div br">
+            <i class="fa-solid fa-video-slash image1"></i>
+            <i class="fa-solid fa-video image2"></i>
+            <span class="popped-text1">Turn off camera (CTRL + E)</span>
+            <span class="popped-text2">Turn on camera (CTRL + E)</span>
+          </div>
+          <!-- Caption ON OFF -->
+          <div class="clickable-element toggleElement hover-div bb">
+            <i class="fa-solid fa-closed-captioning image1"></i>
+            <i class="fa-regular fa-closed-captioning image2"></i>
+            <span class="popped-text1">Turn on captions (c)</span>
+            <span class="popped-text2">Turn off captions (c)</span>
+          </div>
+          <!-- Emoji Select -->
+          <div class="clickable-element toggleElement hover-div bb">
+            <i class="fa-solid fa-face-laugh image1"></i>
+            <i id="emoji-button" class="fa-regular fa-face-laugh image2"></i>
+            <span class="popped-text1">Send a reaction</span>
+            <span class="popped-text2">Send a reaction</span>
+          </div>
+
+          <!-- Presentation ON OFF -->
+          <div class="clickable-element toggleElement hover-div bb">
+            <i
+              class="fa-sharp fa-solid fa-arrow-up-right-from-square image1"
+            ></i>
+            <i
+              class="fa-sharp fa-solid fa-arrow-up-right-from-square image2"
+            ></i>
+            <span class="popped-text1">Present now</span>
+            <span class="popped-text2">You are presenting</span>
+          </div>
+          <!-- Raise Hand -->
+          <div class="clickable-element toggleElement hover-div bb">
+            <i class="fa-solid fa-hand image1"></i>
+            <i class="fa-regular fa-hand image2"></i>
+            <span class="popped-text1">Raise hand (Ctrl + alt + h)</span>
+            <span class="popped-text2">Lower hand (Ctrl + alt + h)</span>
+          </div>
+          <!-- more options -->
+          <div class="clickable-element toggleElement hover-div mo">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <span class="popped-text">More Options</span>
+            <div class="more-optn-popup">
+              <div class="optn">
+                <span class="material-symbols-outlined"> border_color </span
+                >Whiteboard
+              </div>
+              <div class="optn">
+                <span class="material-symbols-outlined"> dashboard </span>Change
+                layout
+              </div>
+              <div class="optn">
+                <span class="material-symbols-outlined"> fullscreen </span>Full
+                screen
+              </div>
+              <div class="optn">
+                <span class="material-symbols-outlined">
+                  branding_watermark </span
+                >Open picture-in-picture mode
+              </div>
+              <div class="optn">
+                <span class="material-symbols-outlined"> auto_awesome </span
+                >Apply visual effects
+              </div>
+              <div class="optn">
+                <span class="material-symbols-outlined"> closed_caption </span
+                >Turn on captions
+              </div>
+              <!-- <hr style="border: 2px solid black;"> -->
+              <div class="optn">
+                <span class="material-symbols-outlined"> sms_failed </span
+                >Report a problem
+              </div>
+              <div class="optn">
+                <span class="material-symbols-outlined"> report </span>Report
+                abuse
+              </div>
+              <div class="optn">
+                <span class="material-symbols-outlined"> contact_support </span
+                >Troublshooting and help
+              </div>
+              <div class="optn">
+                <span class="material-symbols-outlined"> settings </span
+                >Settings
+              </div>
+            </div>
+          </div>
+
+          <!-- end call -->
+          <div
+            class="clickable-element toggleElement hover-div"
+            style="background-color: #ff0000; width: 30px; border-radius: 50px"
+          >
+            <!-- <i class="fa-sharp fa-solid fa-phone-flip"></i> -->
+            <span
+              class="material-symbols-outlined"
+              style="
+                font-weight: bold;
+                margin: 0 auto;
+                font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0,
+                  'opsz' 48;
+              "
+            >
+              call_end
+            </span>
+
+            <span class="popped-text">Leave Call</span>
+          </div>
+        </div>
+
+        <!-- Extra Data Controls -->
+        <div class="extra">
+          <!-- Meeting details -->
+          <div class="clickable-element-2 toggleElement2">
+            <div class="hover-div2">
+              <!-- 2 iamges to toggle -->
+              <i class="fa-solid fa-circle-info image1"></i>
+              <i
+                class="fa-solid fa-circle-info image2"
+                style="color: #8ab4f8"
+              ></i>
+              <!-- On hover text -->
+              <span class="popped-text">Meeting details</span>
+            </div>
+
+            <!-- Content of the div -->
+            <div class="attached-div">
+              <div class="heading">Meeting details</div>
+              <div class="content">
+                <p class="content-heading" style="margin-left: 0px">
+                  Joining info
+                </p>
+                <br />
+                <p style="user-select: text; color: #6f6f6f">
+                  https://meet.google.com/buw-mtsm-fjh
+                </p>
+                <br />
+                <a
+                  href="https://meet.google.com/buw-mtsm-fjh"
+                  style="
+                    text-decoration: none;
+                    letter-spacing: 0.5px;
+                    font-weight: 600;
+                    color: #4292fa;
+                  "
+                  ><i class="fa-solid fa-copy"></i> Copy joining info
+                </a>
+                <br />
+                <hr
+                  style="
+                    margin-top: 30px;
+                    margin-left: -25px;
+                    border: 1px solid #bebdbd69;
+                  "
+                />
+                <br />
+                <div
+                  style="
+                    width: 90%;
+                    white-space: normal;
+                    text-align: center;
+                    color: grey;
+                  "
+                >
+                  Google Calendar attachments will be shown here
+                </div>
+              </div>
+            </div>
+            <!-- cross mark on right-top corner -->
+            <div class="close-div"><i class="fa-solid fa-xmark cross"></i></div>
+          </div>
+          <!-- Show Everyone -->
+          <div class="clickable-element-2 toggleElement2 connected-members">
+            <div class="hover-div2">
+              <!-- 2 iamges to toggle -->
+              <i class="fa-solid fa-user-group image1"></i>
+              <i
+                class="fa-solid fa-user-group image2"
+                style="color: #8ab4f8"
+              ></i>
+              <!-- On hover text -->
+              <span class="popped-text">Show everyone</span>
+              <span class="badge" id="profileCountBadge">2</span>
+            </div>
+
+            <!-- Content of the div -->
+            <div class="attached-div aside-box">
+              <div class="heading abHead">People</div>
+              <a href="#popup" id="add-people">
+                <i class="fa-solid fa-user-plus" style="font-size: 1rem"></i>
+                <p
+                  style="
+                    padding-left: 10px;
+                    font-size: 0.9rem;
+                    font-weight: 550;
+                    color: rgb(92 92 92);
+                  "
+                >
+                  Add people
+                </p>
+              </a>
+              <!-- callers list -->
+              <div class="callers">
+                <div class="container abCont">
+                  <div id="people-content" class="content">
+                    <div id="search-people">
+                      <div id="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Search for people"
+                        id="search-box"
+                      />
+                    </div>
+                    <p class="content-heading" style="letter-spacing: 0px">
+                      In call
+                    </p>
+                    <!-- profile -->
+                    <div class="profile">
+                      <!-- more options -->
+                      <div class="more-actions ma">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="mop">
+                          <div class="optn">
+                            <span
+                              class="material-symbols-outlined"
+                              style="
+                                font-variation-settings: 'FILL' 1, 'wght' 600,
+                                  'GRAD' 0, 'opsz' 48;
+                              "
+                            >
+                              push_pin
+                            </span>
+                            Pin to screen
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              videocam_off
+                            </span>
+                            Don't watch
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              do_not_disturb_on
+                            </span>
+                            Remove from the call
+                          </div>
+                        </div>
+                      </div>
+                      <!-- mic Symbol -->
+                      <div class="mic-section">
+                        <div class="mic">
+                          <i class="fa-solid fa-microphone-slash"></i>
+                        </div>
+                      </div>
+                      <!-- name -->
+                      <div class="name">
+                        <p>Subha Biswal (You)</p>
+                        Meeting host
+                      </div>
+                      <!-- display Pic -->
+                      <div class="small_image-dp">
+                        <img
+                          src="./assets/Subha.jpg"
+                          alt="Subha"
+                          style="text-align: center"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- profile -->
+                    <div class="profile">
+                      <!-- more options -->
+                      <div class="more-actions ma">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="mop">
+                          <div class="optn">
+                            <span
+                              class="material-symbols-outlined"
+                              style="
+                                font-variation-settings: 'FILL' 1, 'wght' 600,
+                                  'GRAD' 0, 'opsz' 48;
+                              "
+                            >
+                              push_pin
+                            </span>
+                            Pin to screen
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              videocam_off
+                            </span>
+                            Don't watch
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              do_not_disturb_on
+                            </span>
+                            Remove from the call
+                          </div>
+                        </div>
+                      </div>
+                      <!-- mic Symbol -->
+                      <div class="mic-section">
+                        <div class="mic">
+                          <i class="fa-solid fa-microphone-slash"></i>
+                        </div>
+                      </div>
+                      <!-- name -->
+                      <div class="name"><p>Vijay Thalapathy</p></div>
+                      <!-- display Pic -->
+                      <div class="small_image-dp">
+                        <img
+                          src="./assets/thalapathy.jpg"
+                          alt="Vijay Thalapathy"
+                          style="text-align: center"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- profile -->
+                    <div class="profile">
+                      <!-- more options -->
+                      <div class="more-actions ma">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="mop">
+                          <div class="optn">
+                            <span
+                              class="material-symbols-outlined"
+                              style="
+                                font-variation-settings: 'FILL' 1, 'wght' 600,
+                                  'GRAD' 0, 'opsz' 48;
+                              "
+                            >
+                              push_pin
+                            </span>
+                            Pin to screen
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              videocam_off
+                            </span>
+                            Don't watch
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              do_not_disturb_on
+                            </span>
+                            Remove from the call
+                          </div>
+                        </div>
+                      </div>
+                      <!-- mic Symbol -->
+                      <div class="mic-section">
+                        <div class="mic">
+                          <i class="fa-solid fa-microphone-slash"></i>
+                        </div>
+                      </div>
+                      <!-- name -->
+                      <div class="name"><p>Allu Arjun</p></div>
+                      <!-- display Pic -->
+                      <div class="small_image-dp">
+                        <img
+                          src="./assets/allu.avif"
+                          alt="Allu Arjun"
+                          style="text-align: center"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- profile -->
+                    <div class="profile">
+                      <!-- more options -->
+                      <div class="more-actions ma">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="mop">
+                          <div class="optn">
+                            <span
+                              class="material-symbols-outlined"
+                              style="
+                                font-variation-settings: 'FILL' 1, 'wght' 600,
+                                  'GRAD' 0, 'opsz' 48;
+                              "
+                            >
+                              push_pin
+                            </span>
+                            Pin to screen
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              videocam_off
+                            </span>
+                            Don't watch
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              do_not_disturb_on
+                            </span>
+                            Remove from the call
+                          </div>
+                        </div>
+                      </div>
+                      <!-- mic Symbol -->
+                      <div class="mic-section">
+                        <div class="mic">
+                          <i class="fa-solid fa-microphone-slash"></i>
+                        </div>
+                      </div>
+                      <!-- name -->
+                      <div class="name"><p>N. T. Rama Rao Jr.</p></div>
+                      <!-- display Pic -->
+                      <div class="small_image-dp">
+                        <img
+                          src="./assets/ntr.avif"
+                          alt="N. T. Rama Rao Jr."
+                          style="text-align: center"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- profile -->
+                    <div class="profile">
+                      <!-- more options -->
+                      <div class="more-actions ma">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="mop">
+                          <div class="optn">
+                            <span
+                              class="material-symbols-outlined"
+                              style="
+                                font-variation-settings: 'FILL' 1, 'wght' 600,
+                                  'GRAD' 0, 'opsz' 48;
+                              "
+                            >
+                              push_pin
+                            </span>
+                            Pin to screen
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              videocam_off
+                            </span>
+                            Don't watch
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              do_not_disturb_on
+                            </span>
+                            Remove from the call
+                          </div>
+                        </div>
+                      </div>
+                      <!-- mic Symbol -->
+                      <div class="mic-section">
+                        <div class="mic">
+                          <i class="fa-solid fa-microphone-slash"></i>
+                        </div>
+                      </div>
+                      <!-- name -->
+                      <div class="name"><p>Vijay Devarakonda</p></div>
+                      <!-- display Pic -->
+                      <div class="small_image-dp">
+                        <img
+                          src="./assets/deverkonda.jpeg"
+                          alt="Vijay Devarakonda"
+                          style="text-align: center"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- profile -->
+                    <div class="profile">
+                      <!-- more options -->
+                      <div class="more-actions ma">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="mop">
+                          <div class="optn">
+                            <span
+                              class="material-symbols-outlined"
+                              style="
+                                font-variation-settings: 'FILL' 1, 'wght' 600,
+                                  'GRAD' 0, 'opsz' 48;
+                              "
+                            >
+                              push_pin
+                            </span>
+                            Pin to screen
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              videocam_off
+                            </span>
+                            Don't watch
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              do_not_disturb_on
+                            </span>
+                            Remove from the call
+                          </div>
+                        </div>
+                      </div>
+                      <!-- mic Symbol -->
+                      <div class="mic-section">
+                        <div class="mic">
+                          <i class="fa-solid fa-microphone-slash"></i>
+                        </div>
+                      </div>
+                      <!-- name -->
+                      <div class="name"><p>Mahesh Babu</p></div>
+                      <!-- display Pic -->
+                      <div class="small_image-dp">
+                        <img
+                          src="./assets/mahes.jpg"
+                          alt="Mahesh Babu"
+                          style="text-align: center"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- profile -->
+                    <div class="profile">
+                      <!-- more options -->
+                      <div class="more-actions ma">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="mop">
+                          <div class="optn">
+                            <span
+                              class="material-symbols-outlined"
+                              style="
+                                font-variation-settings: 'FILL' 1, 'wght' 600,
+                                  'GRAD' 0, 'opsz' 48;
+                              "
+                            >
+                              push_pin
+                            </span>
+                            Pin to screen
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              videocam_off
+                            </span>
+                            Don't watch
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              do_not_disturb_on
+                            </span>
+                            Remove from the call
+                          </div>
+                        </div>
+                      </div>
+                      <!-- mic Symbol -->
+                      <div class="mic-section">
+                        <div class="mic">
+                          <i class="fa-solid fa-microphone-slash"></i>
+                        </div>
+                      </div>
+                      <!-- name -->
+                      <div class="name"><p>Prabhas</p></div>
+                      <!-- display Pic -->
+                      <div class="small_image-dp">
+                        <img
+                          src="./assets/prabhas.jpg"
+                          alt="Prabhas"
+                          style="text-align: center"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- profile -->
+                    <div class="profile">
+                      <!-- more options -->
+                      <div class="more-actions ma">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="mop">
+                          <div class="optn">
+                            <span
+                              class="material-symbols-outlined"
+                              style="
+                                font-variation-settings: 'FILL' 1, 'wght' 600,
+                                  'GRAD' 0, 'opsz' 48;
+                              "
+                            >
+                              push_pin
+                            </span>
+                            Pin to screen
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              videocam_off
+                            </span>
+                            Don't watch
+                          </div>
+                          <div class="optn">
+                            <span class="material-symbols-outlined">
+                              do_not_disturb_on
+                            </span>
+                            Remove from the call
+                          </div>
+                        </div>
+                      </div>
+                      <!-- mic Symbol -->
+                      <div class="mic-section">
+                        <div class="mic">
+                          <i class="fa-solid fa-microphone-slash"></i>
+                        </div>
+                      </div>
+                      <!-- name -->
+                      <div class="name"><p>Yash</p></div>
+                      <!-- display Pic -->
+                      <div class="small_image-dp">
+                        <img
+                          src="./assets/yash.jpg"
+                          alt="Yash"
+                          style="text-align: center"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- cross mark on right-top corner -->
+            <div class="close-div"><i class="fa-solid fa-xmark cross"></i></div>
+          </div>
+          <!-- Chat -->
+          <div class="clickable-element-2 toggleElement2">
+            <div class="hover-div2">
+              <!-- 2 iamges to toggle -->
+              <i class="fa-solid fa-message image1"></i>
+              <i class="fa-solid fa-message image2" style="color: #8ab4f8"></i>
+              <!-- On hover text -->
+              <span class="popped-text">Chat with everyone</span>
+            </div>
+            <!-- Content of the div -->
+            <div class="attached-div chat-div">
+              <div class="heading chatHead">In-call messages</div>
+              <div class="content msg chatMsg">
+                <div class="msgalow">
+                  <p>Let everyone send messages</p>
+                  <label class="toggle-control">
+                    <input type="checkbox" checked="checked" />
+                    <span class="control"></span>
+                  </label>
+                </div>
+                <div class="msgalow" id="alrt">
+                  <p>
+                    Messages can be seen only by the people in the call and
+                    chats are deleted when the call ends
+                  </p>
+                </div>
+              </div>
+              <div id="chats">
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">You</div>
+                    <div class="tm">20:05</div>
+                  </div>
+                  <div class="ms">Hello everyone! 👋</div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Prabhas</div>
+                    <div class="tm">20:45</div>
+                  </div>
+                  <div class="ms">
+                    hello all 🫶 <br />
+                    wassup?
+                  </div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Allu Arjun</div>
+                    <div class="tm">21:00</div>
+                  </div>
+                  <div class="ms">
+                    Long time no see! <br />
+                    What's up? <br />
+                    Any new projects?
+                  </div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Mahesh Babu</div>
+                    <div class="tm">21:04</div>
+                  </div>
+                  <div class="ms">I'm excited for my upcoming film!</div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">N. T. Rama Rao Jr.</div>
+                    <div class="tm">21:08</div>
+                  </div>
+                  <div class="ms">
+                    Me too! <br />
+                    Can't wait to start shooting.
+                  </div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">You</div>
+                    <div class="tm">21:10</div>
+                  </div>
+                  <div class="ms">That sounds amazing!</div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Vijay Devarakonda</div>
+                    <div class="tm">21:11</div>
+                  </div>
+                  <div class="ms">Has anyone seen the latest blockbuster?</div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Yash</div>
+                    <div class="tm">21:12</div>
+                  </div>
+                  <div class="ms">
+                    Yes <br />
+                    it was mind-blowing!
+                  </div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Allu Arjun</div>
+                    <div class="tm">21:15</div>
+                  </div>
+                  <div class="ms">
+                    I couldn't agree more. <br />
+                    The acting was exceptional.
+                  </div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Vijay Devarakonda</div>
+                    <div class="tm">21:17</div>
+                  </div>
+                  <div class="ms">
+                    I'm glad you enjoyed it <br />
+                    I heard the director put in a lot of effort.
+                  </div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Vijay Thalapathy</div>
+                    <div class="tm">21:18</div>
+                  </div>
+                  <div class="ms">
+                    Definitely <br />
+                    it deserves all the praise.
+                  </div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Vijay Devarakonda</div>
+                    <div class="tm">21:20</div>
+                  </div>
+                  <div class="ms">
+                    Yes, I'm hoping to win an award this year.
+                  </div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">You</div>
+                    <div class="tm">21:21</div>
+                  </div>
+                  <div class="ms">Good luck to all of you! You deserve it.</div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Vijay Devarakonda</div>
+                    <div class="tm">21:25</div>
+                  </div>
+                  <div class="ms">Thank you! We appreciate your support.</div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Yash</div>
+                    <div class="tm">21:26</div>
+                  </div>
+                  <div class="ms">Thanks for being a great fan!</div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">Allu Arjun</div>
+                    <div class="tm">21:28</div>
+                  </div>
+                  <div class="ms">
+                    By the way, <br />
+                    Why u guys are taliking in chat. <br />
+                    we are in google meet <br />
+                    turn on your camera <br />
+                    or you are spending private time 🫣 <br />
+                    🫢🫢🫢🤣🤣
+                  </div>
+                </div>
+                <!-- message -->
+                <div class="message">
+                  <div class="msg-dtl">
+                    <div class="nm">You</div>
+                    <div class="tm">21:30</div>
+                  </div>
+                  <div class="ms">
+                    🫡🫡🫡🫡 <br />
+                    😜😂😂😂
+                  </div>
+                </div>
+              </div>
+              <div class="sminp">
+                <div class="send-msg">
+                  <input
+                    id="message-input"
+                    type="text"
+                    placeholder="Send a message"
+                  />
+                  <div id="send-icon" class="sndicn">
+                    <span
+                      class="material-symbols-outlined"
+                      style="margin-right: 0; font-size: 26px;"
+                    >
+                      send
+                    </span>
+                    <div class="popped-text">Send message</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- cross mark on right-top corner -->
+            <div class="close-div"><i class="fa-solid fa-xmark cross"></i></div>
+          </div>
+          <!-- Activities -->
+          <div class="clickable-element-2 toggleElement2">
+            <div class="hover-div2">
+              <!-- 2 iamges to toggle -->
+              <i class="fa-sharp fa-solid fa-shapes image1"></i>
+              <i
+                class="fa-sharp fa-solid fa-shapes image2"
+                style="color: #8ab4f8"
+              ></i>
+              <!-- On hover text -->
+              <span class="popped-text">Activities</span>
+            </div>
+            <!-- Content of the div -->
+            <div class="attached-div">
+              <div class="heading">Activities</div>
+              <div class="content" style="margin-top: 0; padding-left: 7px">
+                <div class="friend" style="margin-bottom: 35px">
+                  <!-- name -->
+                  <div
+                    class="name"
+                    style="left: 20%; top: 45%; font-weight: bolder"
+                  >
+                    <p>Whiteboarding</p>
+                  </div>
+                  <!-- email -->
+                  <div class="email" style="left: 20%">
+                    <p>Sketch ideas</p>
+                  </div>
+                  <!-- profile Image -->
+                  <div class="small_image-dp" style="height: 42px; width: 42px">
+                    <img
+                      src="https://www.gstatic.com/meet/google-meet-icons_whiteboard-icon_44ebb90da0e177ad2a47be47dccc81ae.svg"
+                      alt="whiteboarding"
+                      style="text-align: center"
+                    />
+                  </div>
+                </div>
+
+                <p class="content-heading" style="margin-left: 20px">ADD-ONS</p>
+                <br />
+                <p
+                  style="
+                    user-select: text;
+                    color: #6f6f6f;
+                    padding-left: 20px;
+                    margin-top: -10px;
+                  "
+                >
+                  Third-party tools offered by Meet
+                </p>
+                <br />
+
+                <div class="friend" style="margin-bottom: 35px">
+                  <!-- name -->
+                  <div
+                    class="name"
+                    style="left: 20%; top: 45%; font-weight: bolder"
+                  >
+                    <p>Miro</p>
+                  </div>
+                  <!-- email -->
+                  <div class="email" style="left: 20%">
+                    <p>Whiteboard with tools and templates</p>
+                  </div>
+                  <!-- profile Image -->
+                  <div class="small_image-dp" style="height: 42px; width: 42px">
+                    <img
+                      src="https://www.gstatic.com/meet/miro_icon_5e23ac0cd3e628a6140f5dfcc8e245ec.svg"
+                      alt="miro"
+                      style="text-align: center"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- cross mark on right-top corner -->
+            <div class="close-div"><i class="fa-solid fa-xmark cross"></i></div>
+          </div>
+          <!-- Host Controls -->
+          <div class="clickable-element-2 toggleElement2">
+            <div class="hover-div2-hostControl">
+              <!-- 2 iamges to toggle -->
+              <i class="fa-solid fa-user-lock image1"></i>
+              <i
+                class="fa-solid fa-user-lock image2"
+                style="color: #8ab4f8"
+              ></i>
+              <!-- On hover text -->
+              <span class="popped-text">Host controls</span>
+            </div>
+            <!-- Content of the div -->
+            <div class="attached-div hostDIv">
+              <div class="heading hostHead">Host controls</div>
+              <div class="ntext hostDesc">
+                Use these host settings to keep control of your meeting. Only
+                hosts have access to these controls.
+              </div>
+              <div class="host-mngmt" id="hostopn">
+                <div class="content" id="host-mngmtCB">
+                  <p class="content-heading">MEETING MODERATION</p>
+                </div>
+                <div class="content hmt">
+                  <label class="toggle-control">
+                    <input type="checkbox" checked="checked" />
+                    <span class="control"></span>
+                  </label>
+                  <p
+                    class="content-heading"
+                    style="margin-left: 0; margin-top: -10px; color: black"
+                  >
+                    Host Management
+                  </p>
+                  <p
+                    style="
+                      width: 70%;
+                      white-space: normal;
+                      font-size: 0.63rem;
+                      margin-top: 8px;
+                      line-height: 1.5;
+                    "
+                  >
+                    Lets you restrict what participants can do in the meeting.
+                    <a
+                      href="https://support.google.com/meet/answer/10885841?hl=en-GB"
+                      target="_blank"
+                      >Learn more</a
+                    >
+                  </p>
+                </div>
+                <div class="mpoptns">
+                  <div
+                    class="content hmt"
+                    style="padding-left: 0; margin-top: 0px"
+                  >
+                    <p
+                      class="content-heading"
+                      style="
+                        margin-left: 0;
+                        margin-top: 0px;
+                        font-size: 0.65rem;
+                        color: #707070;
+                      "
+                    >
+                      LET EVERYONE
+                    </p>
+                    <div class="host-option">
+                      <div class="content hmt htmex">
+                        <label class="toggle-control">
+                          <input type="checkbox" checked="checked" />
+                          <span class="control"></span>
+                        </label>
+                        <p class="content-heading">Host Management</p>
+                      </div>
+                      <div class="content hmt htmex">
+                        <label class="toggle-control">
+                          <input type="checkbox" checked="checked" />
+                          <span class="control"></span>
+                        </label>
+                        <p class="content-heading">Share their screen</p>
+                      </div>
+                      <div class="content hmt htmex">
+                        <label class="toggle-control">
+                          <input type="checkbox" checked="checked" />
+                          <span class="control"></span>
+                        </label>
+                        <p class="content-heading">Send chat messages</p>
+                      </div>
+                      <div class="content hmt htmex">
+                        <label class="toggle-control">
+                          <input type="checkbox" checked="checked" />
+                          <span class="control"></span>
+                        </label>
+                        <p class="content-heading">Send reactions</p>
+                      </div>
+                      <div class="content hmt htmex">
+                        <label class="toggle-control">
+                          <input type="checkbox" checked="checked" />
+                          <span class="control"></span>
+                        </label>
+                        <p class="content-heading">Turn on their microphone</p>
+                        <p
+                          style="
+                            width: 70%;
+                            white-space: normal;
+                            font-size: 0.63rem;
+                            margin-top: 8px;
+                            line-height: 1.5;
+                          "
+                        >
+                          Turning this off might remove people using an outdated
+                          Meet app or non-Google meeting hardware. They can
+                          rejoin when it's turned on again.
+                        </p>
+                      </div>
+                      <div class="content hmt htmex">
+                        <label class="toggle-control">
+                          <input type="checkbox" checked="checked" />
+                          <span class="control"></span>
+                        </label>
+                        <p class="content-heading">Turn on their video</p>
+                        <p
+                          style="
+                            width: 70%;
+                            white-space: normal;
+                            font-size: 0.63rem;
+                            margin-top: 8px;
+                            margin-bottom: 20px;
+                            line-height: 1.5;
+                          "
+                        >
+                          Turning this off might remove people using an outdated
+                          Meet app or non-Google meeting hardware. They can
+                          rejoin when it's turned on again.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- cross mark on right-top corner -->
+            <div class="close-div"><i class="fa-solid fa-xmark cross"></i></div>
+          </div>
+        </div>
+      </footer>
+      <!-- popup div for add people -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <a href="#add-people" class="close-btn">
+            <i class="fa-solid fa-xmark cross" n style="margin-top: 9px"></i
+          ></a>
+          <div class="stay">
+            <div class="d1">Add people</div>
+
+            <div class="d2">
+              <button class="button" id="invite">
+                <i class="fa-solid fa-user-plus" style="font-size: 1rem"></i>
+                <p style="padding-left: 10px; font-size: 14px">Invite</p>
+              </button>
+              <div id="small-line"></div>
+            </div>
+            <hr />
+            <input type="text" placeholder="Enter name or email" />
+            <hr style="margin-bottom: 0" />
+          </div>
+          <div class="scrolling-content">
+            <div id="suggestion">Suggestions</div>
+            <div class="contact">
+              <!-- Friend contact Section -->
+              <div class="friend">
+                <!-- profile Image -->
+                <div class="small_image-dp">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/ABC-2021-LOGO.svg"
+                    alt="Subha"
+                    style="text-align: center"
+                  />
+                </div>
+                <!-- name -->
+                <div class="name"><p>Abc Title</p></div>
+                <!-- email -->
+                <div class="email"><p>abc@gmail.com</p></div>
+
+                <!-- Check Box -->
+                <input type="checkbox" id="myCheckbox" />
+              </div>
+              <!-- Friend contact Section -->
+              <div class="friend">
+                <!-- profile Image -->
+                <div class="small_image-dp">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/ABC-2021-LOGO.svg"
+                    alt="Subha"
+                    style="text-align: center"
+                  />
+                </div>
+                <!-- name -->
+                <div class="name"><p>Abc Title</p></div>
+                <!-- email -->
+                <div class="email"><p>abc@gmail.com</p></div>
+
+                <!-- Check Box -->
+                <input type="checkbox" id="myCheckbox" />
+              </div>
+              <!-- Friend contact Section -->
+              <div class="friend">
+                <!-- profile Image -->
+                <div class="small_image-dp">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/ABC-2021-LOGO.svg"
+                    alt="Subha"
+                    style="text-align: center"
+                  />
+                </div>
+                <!-- name -->
+                <div class="name"><p>Abc Title</p></div>
+                <!-- email -->
+                <div class="email"><p>abc@gmail.com</p></div>
+
+                <!-- Check Box -->
+                <input type="checkbox" id="myCheckbox" />
+              </div>
+              <!-- Friend contact Section -->
+              <div class="friend">
+                <!-- profile Image -->
+                <div class="small_image-dp">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/ABC-2021-LOGO.svg"
+                    alt="Subha"
+                    style="text-align: center"
+                  />
+                </div>
+                <!-- name -->
+                <div class="name"><p>Abc Title</p></div>
+                <!-- email -->
+                <div class="email"><p>abc@gmail.com</p></div>
+
+                <!-- Check Box -->
+                <input type="checkbox" id="myCheckbox" />
+              </div>
+              <!-- Friend contact Section -->
+              <div class="friend">
+                <!-- profile Image -->
+                <div class="small_image-dp">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/ABC-2021-LOGO.svg"
+                    alt="Subha"
+                    style="text-align: center"
+                  />
+                </div>
+                <!-- name -->
+                <div class="name"><p>Abc Title</p></div>
+                <!-- email -->
+                <div class="email"><p>abc@gmail.com</p></div>
+
+                <!-- Check Box -->
+                <input type="checkbox" id="myCheckbox" />
+              </div>
+              <!-- Friend contact Section -->
+              <div class="friend">
+                <!-- profile Image -->
+                <div class="small_image-dp">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/ABC-2021-LOGO.svg"
+                    alt="Subha"
+                    style="text-align: center"
+                  />
+                </div>
+                <!-- name -->
+                <div class="name"><p>Abc Title</p></div>
+                <!-- email -->
+                <div class="email"><p>abc@gmail.com</p></div>
+
+                <!-- Check Box -->
+                <input type="checkbox" id="myCheckbox" />
+              </div>
+              <!-- Friend contact Section -->
+              <div class="friend">
+                <!-- profile Image -->
+                <div class="small_image-dp">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/ABC-2021-LOGO.svg"
+                    alt="Subha"
+                    style="text-align: center"
+                  />
+                </div>
+                <!-- name -->
+                <div class="name"><p>Abc Title</p></div>
+                <!-- email -->
+                <div class="email"><p>abc@gmail.com</p></div>
+
+                <!-- Check Box -->
+                <input type="checkbox" id="myCheckbox" />
+              </div>
+              <!-- Friend contact Section -->
+              <div class="friend">
+                <!-- profile Image -->
+                <div class="small_image-dp">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/ABC-2021-LOGO.svg"
+                    alt="Subha"
+                    style="text-align: center"
+                  />
+                </div>
+                <!-- name -->
+                <div class="name"><p>Abc Title</p></div>
+                <!-- email -->
+                <div class="email"><p>abc@gmail.com</p></div>
+
+                <!-- Check Box -->
+                <input type="checkbox" id="myCheckbox" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
